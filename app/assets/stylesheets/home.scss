@@ -1,0 +1,157 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FDF8FF;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.banner {
+  height: 180px;
+  margin: 100px auto 0 auto;
+  background-image:url(asset_path('header_m.png'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+  position: relative;
+}
+
+.nameplate {
+  background-color: rgba(0,0,0,0.0);
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nameplate-text {
+  position: relative;
+  top: 8.5em;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.resume {
+  color: #FDF8FF;
+  text-decoration: none;
+}
+
+.credit {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  a {
+    text-decoration: none;
+    color: #FDF8FF;
+    font-size: 12px;
+    float: right;
+  }
+}
+
+.name {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: 2.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  color: #FDF8FF;
+  font-size: 1.6em;
+  text-align: center;
+  position: relative;
+  z-index: 1001;
+  top: 30px;
+}
+
+#resume-container {
+  width: 100%;
+  position: relative;
+  top: -4.7em;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.pdf:hover,
+.resume:hover {
+  cursor: pointer;
+}
+
+
+.contact-bar {
+  height: 50px;
+  width: 100%;
+}
+
+.text-box {
+  display: none;
+  color: gray;
+}
+
+.pdf-bar {
+  padding-top: 10px;
+}
+
+.icons {
+  width: 220px;
+  margin: 0px auto;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.fa-linkedin,
+.fa-twitter,
+.fa-envelope,
+.fa-tumblr,
+.fa-home {
+  color: black;
+  padding: 10px 5px 0 5px;
+}
+
+.fa-cloud-download {
+  color: #FDF8FF;
+}
+
+.fa-linkedin:hover,
+.fa-twitter:hover,
+.fa-envelope:hover,
+.fa-tumblr:hover,
+.fa-home:hover {
+  color:#656565;
+}
+
+#links {
+  color: black;
+}
+
+#links:hover {
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .icons {
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+    display: block;
+  }
+  .credit, .footer {
+    display: none;
+  }
+}
